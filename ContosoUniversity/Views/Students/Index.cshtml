@@ -10,7 +10,15 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 
-<table class="table">    
+@using (Html.BeginForm())
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
     <tr>
         <th>
             @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParm })
