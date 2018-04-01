@@ -173,8 +173,13 @@
     <Compile Include="Migrations\201804011254431_ColumnFirstName.Designer.cs">
       <DependentUpon>201804011254431_ColumnFirstName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804011357034_ComplexDataModel.cs" />
+    <Compile Include="Migrations\201804011357034_ComplexDataModel.Designer.cs">
+      <DependentUpon>201804011357034_ComplexDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\OfficeAssignment.cs" />
@@ -256,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804011254431_ColumnFirstName.resx">
       <DependentUpon>201804011254431_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804011357034_ComplexDataModel.resx">
+      <DependentUpon>201804011357034_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
