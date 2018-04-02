@@ -131,7 +131,7 @@ namespace ContosoUniversity.Migrations
             AddOrUpdateInstructor(context, "Calculus", "Fakhouri");
             AddOrUpdateInstructor(context, "Trigonometry", "Harui");
             AddOrUpdateInstructor(context, "Composition", "Abercrombie");
-            AddOrUpdateInstructor(context, "Literature", "Abercrombie");
+            AddOrUpdateInstructor(context, "Literature", "Abercrombie"); 
 
             context.SaveChanges();
 
@@ -213,6 +213,6 @@ namespace ContosoUniversity.Migrations
             var inst = crs.Instructors.SingleOrDefault(i => i.LastName == instructorName);
             if (inst == null)
                 crs.Instructors.Add(context.Instructors.Single(i => i.LastName == instructorName));
-        }
+        } 
     }
 }
